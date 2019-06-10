@@ -71,17 +71,17 @@ where "PathToSnpFiles" is the path to the folder containing all data file, "anno
 
 ## How LD-annot works
 
-Most researchers wants to get annotations for genes close and/or genetically linked to candidate polymorphisms detected using Genome-Wide Association Analyses or other approaches allowing to identify markers likely linked to phenotypic or environmental variations of interest. However, the estimator of linkage disequilibrium (r2) is not stable within a species but varies according to population history, actual recombination rate, minor allele frequency and sampling, for instance. Hence, r2 MUST be estimated for each markers and within each experiment.
-LD-annot estimates
+Most researchers want to get annotations for genes close and/or genetically linked to candidate polymorphisms detected using Genome-Wide Association Analyses or other approaches allowing to identify markers likely linked to phenotypic or environmental variations of interest. However, the estimator of linkage disequilibrium (r2) is not stable within a species but varies according to population history, actual recombination rate, minor allele frequency and sampling, for instance. Hence, r2 MUST be estimated for each markers and within each experiment.
+LD-annot estimates the extent of the genomic region in LD with each candidate polymorphism according to the threshold specified by the user and provides annotations for genes within or overlapping this region (see figure). It also calculates an average distance in bp between markers in LD with r2 > threshold that is used to estimate the region when there's no other markers around the candidate polymorphism allowing to delineate such region. In this case, a flag "\_alone" is added to the SNP name in the output file to signal it.
 
 
 <pre>
 features:                gene1     gene2                   gene3         gene4  
 position:                  V         V                       V             V    
 sequence:           ------------------------------------------------------------
-SNPs:                .  .  .      .   .  .     . **.**    .  .  ..  . .   .     .  .
-                                                 **^**
-                                            **CANDIDATE SNP**
+SNPs:                .  .  .      .   .  .     . .    .  .  ..  . .   .     .  .
+                                                 ^
+                                            CANDIDATE SNP
 
 region considered
 for r2 > 0.9                      |________________________________|  
@@ -91,6 +91,10 @@ region for
 r2 > 0.8             |__________________________________________________________|
 
 </pre>
+
+
+The output file is a tab delimited text file including in this order: SNP name, chromosome name, start position for feature (gene, transcript...) in LD, end position for feature in LD, feature annotation according to the gff file.
+Chromosome name can be a contig name in case of draft assembly.
 
 
 
