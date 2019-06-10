@@ -5,6 +5,7 @@ A bioinformatics tool to automatically provide candidate SNPs with annotations f
 
 LD-annot estimates experiment-specific linkage disequilibrium to delineate regions genetically linked to each genetic markers from a list of polymorphisms (most often candidate SNPs from GWAS) and provide coordinates and annotations for genes included or overlapping such regions.
 
+
 ## Citing LD-annot
 Prunier J, Lemaçon A, Bastien A, Mohsen, Porth I., Robert C and Droit A. submitted. LD-Annot: a bioinformatics tool to automatically provide candidate SNPs with annotations for genes in linkage disequilibrium.
 
@@ -14,7 +15,7 @@ LD-annot is meant to be easy to install and use for biologists without advanced 
 1) a python script (LD-annot.py) written in Python3 (not 2.7 that will not run properly and delivered a error message)
 2) a bash script (calculLD.sh) that need to be in the same folder and will be invoked by LD-annot.py
 
-The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find here: https://www.cog-genomics.org/plink2 or here.
+The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find it here: https://www.cog-genomics.org/plink2 or here.
 To install it, simply follow the instructions repeated below.
 
 
@@ -65,6 +66,32 @@ where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic c
 python3 annot-GBS.py PathToSnpFiles annot.gff3 candidate type thr output SNP_Map
 ```
 where "PathToSnpFiles" is the path to the folder containing all data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, "output" is an output name specified by the user, and "SNP_Map" is a map file indicating chromosome and positions for all SNPs genotyped using the SNP-chip.
+
+
+
+## How LD-annot works
+
+Most researchers wants to get annotations for genes close and/or genetically linked to candidate polymorphisms detected using Genome-Wide Association Analyses or other approaches allowing to identify markers likely linked to phenotypic or environmental variations of interest. However, the estimator of linkage disequilibrium (r2) is not stable within a species but varies according to population history, actual recombination rate, minor allele frequency and sampling, for instance. Hence, r2 MUST be estimated for each markers and within each experiment.
+LD-annot estimates
+
+
+features:                gene1     gene2                   gene3         gene4  
+position:                  V         V                       V             V    
+sequence:           ------------------------------------------------------------
+SNPs:                .  .  .      .   .  .     . **.**    .  .  ..  . .   .     .  .
+                                                 **^**
+                                            **CANDIDATE SNP**
+
+region considered
+for r2 > 0.9                      |________________________________|  
+
+
+region for
+r2 > 0.8             |__________________________________________________________|
+
+
+
+
 
 
 
