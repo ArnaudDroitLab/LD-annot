@@ -15,7 +15,7 @@ LD-annot is meant to be easy to install and use for biologists without advanced 
 1) a python script (LD-annot.py) written in Python3 (not 2.7 that will not run properly and delivered a error message)
 2) a bash script (calculLD.sh) that need to be in the same folder and will be invoked by LD-annot.py
 
-The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find it here: https://www.cog-genomics.org/plink2 or here.
+The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find it here: https://www.cog-genomics.org/plink2 , or from this repository for linux (plink_linux_x86_64_20190304.zip). PLINK1.9 is under GNU GENERAL PUBLIC LICENSE (v3, 29 June 2007).
 To install it, simply follow the instructions repeated below.
 
 
