@@ -68,6 +68,10 @@ python3 annot-GBS.py PathToSnpFiles annot.gff3 candidate type thr output SNP_Map
 where "PathToSnpFiles" is the path to the folder containing all data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, "output" is an output name specified by the user, and "SNP_Map" is a map file indicating chromosome and positions for all SNPs genotyped using the SNP-chip.
 
 
+**Note** that the chromosome identification should be consistent among the various files. Most often, it is a number maybe prefixed with a “chr”. A format checking step is performed by LD-annot and generates error messages pointing at corrupt files and probable causes.
+Also, there is no need to specify "python3" if it is your default python version.
+
+
 
 ## How LD-annot works
 
