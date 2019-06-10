@@ -40,7 +40,7 @@ Then, you can either change your $PATH variable only for this session by doing:
 export PATH=~/bin/:$PATH
 ```
 
-Alternatively, the $PATH variable can be changed in the .bash_probile which will add the path to "~/bin" into the $PATH. To do so, the .bash_profile file located into the home folder should be edited and "~/bin:" should be added to the PATH. The line should look something like this at the end :
+Alternatively, the $PATH variable can be changed in the .bash_probile which will add the path to ""~/bin"" into the $PATH. To do so, the .bash_profile file located into the home folder should be edited and "~/bin:" should be added to the PATH. The line should look something like this at the end :
 
 ```
 PATH=~/bin:<other paths>:$PATH
