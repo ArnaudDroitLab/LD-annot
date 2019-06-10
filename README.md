@@ -36,7 +36,7 @@ If you're using a linux operating system:
 ```
 mkdir ~/bin #if you don't already have one
 unzip plink_linux_x86_64_20190304.zip
-cd plink_linux_x86_64_20190304.zip
+cd plink_linux_x86_64_20190304
 mv plink ~/bin/
 ```
 Then, you can either change your $PATH variable only for this session by doing:
