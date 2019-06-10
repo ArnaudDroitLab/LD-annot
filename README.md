@@ -75,12 +75,12 @@ Most researchers wants to get annotations for genes close and/or genetically lin
 LD-annot estimates
 
 
-features:                gene1     gene2                   gene3         gene4  
-position:                  V         V                       V             V    
-sequence:           ------------------------------------------------------------
-SNPs:                .  .  .      .   .  .     . **.**    .  .  ..  . .   .     .  .
-                                                 **^**
-                                            **CANDIDATE SNP**
+"features:                gene1     gene2                   gene3         gene4  
+"position:                  V         V                       V             V    
+"sequence:           ------------------------------------------------------------
+"SNPs:                .  .  .      .   .  .     . "**.**"    .  .  ..  . .   .     .  ."
+"                                                "**^**"
+"                                            "**CANDIDATE SNP**
 
 region considered
 for r2 > 0.9                      |________________________________|  
