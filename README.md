@@ -71,7 +71,7 @@ where "PathToSnpFiles" is the path to the folder containing all data file, "anno
 
 ## How LD-annot works
 
-Most researchers want to get annotations for genes close and/or genetically linked to candidate polymorphisms detected using Genome-Wide Association Analyses or other approaches allowing to identify markers likely linked to phenotypic or environmental variations of interest. However, the estimator of linkage disequilibrium (r2) is not stable within a species but varies according to population history, actual recombination rate, minor allele frequency and sampling, for instance. Hence, r2 MUST be estimated for each markers and within each experiment.
+Most researchers want to get annotations for genes close and/or genetically linked to candidate polymorphisms detected using Genome-Wide Association Analyses or other approaches allowing to identify markers likely related to phenotypic or environmental variations of interest. However, the estimator of linkage disequilibrium (r2) is not stable within a species but varies according to population history, actual recombination rate, minor allele frequency and sampling, for instance. Hence, r2 MUST be estimated for each markers and within each experiment.
 LD-annot estimates the extent of the genomic region in LD with each candidate polymorphism according to the threshold specified by the user and provides annotations for genes within or overlapping this region (see figure). It also calculates an average distance in bp between markers in LD with r2 > threshold that is used to estimate the region when there's no other markers around the candidate polymorphism allowing to delineate such region. In this case, a flag "\_alone" is added to the SNP name in the output file to signal it.
 
 
