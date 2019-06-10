@@ -29,7 +29,7 @@ cd LD-annot/
 chmod +x LD-annot.py
 ```
 
-### Installing PLINK1.9 (if needed)
+#### Installing PLINK1.9 (if needed)
 Note that LD-annot invokes the plink function. If you're also installing PLINK1.9, please run from the Dowloads folder where it should have been downloaded:
 If you're using a linux operating system:
 ```
@@ -55,15 +55,17 @@ LD-annot runs using only one command line which provide path to files and requir
 ##### When data come from a vcf file, run the following command line:
 ```
 python3 annot-GBS.py geno.vcf annot.gff3 candidate type thr output
-
 ```
-where geno.vcf is the data file, annot.gff3 is the file containing genomic coordinates and annotations for features (most often genes), type is the feature (mRNA, CDS, gene), thr is the threshold for r2, and output is an output name specified by the user.
+where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, and "output" is an output name specified by the user.
 
 
 
 ##### When data come from SNP genotyping, files containing genotypes per individual should be placed in a folder int the same folder as LD-annot.py and calculLD.sh:
 ```
+python3 annot-GBS.py PathToSnpFiles annot.gff3 candidate type thr output SNP_Map
 ```
+where "PathToSnpFiles" is the path to the folder containing all data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, "output" is an output name specified by the user, and "SNP_Map" is a map file indicating chromosome and positions for all SNPs genotyped using the SNP-chip.
+
 
 
 
