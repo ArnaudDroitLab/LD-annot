@@ -47,7 +47,12 @@ PATH=~/bin:<other paths>:$PATH
 ```
 
 ## Running LD-annot
+LD-annot runs using only one command line which provide path to files and required parameters.
+When data come from a vcf file, run the following command line:
+```
+```
 
+When data are 
 
 
 
