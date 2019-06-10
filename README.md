@@ -35,7 +35,7 @@ unzip plink_linux_x86_64_20190304.zip
 cd plink_linux_x86_64_20190304.zip
 mv plink ~/bin/
 ```
-Then, you can either change your $PATH variable only for this session doing
+Then, you can either change your $PATH variable only for this session by doing:
 ```
 export PATH=~/bin/:$PATH
 ```
