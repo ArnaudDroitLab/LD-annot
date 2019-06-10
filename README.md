@@ -50,9 +50,14 @@ PATH=~/bin:<other paths>:$PATH
 LD-annot runs using only one command line which provide path to files and required parameters.
 When data come from a vcf file, run the following command line:
 ```
+
 ```
 
-When data are 
+When data come from SNP genotyping, files containing genotypes per individual should be placed in a folder int the same folder as LD-annot.py and calculLD.sh:
+```
+```
+
+
 
 
 
