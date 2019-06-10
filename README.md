@@ -1,5 +1,5 @@
 # LD-annot
-#A bioinformatics tool to automatically provide candidate SNPs with annotations for genes in linkage disequilibrium.
+A bioinformatics tool to automatically provide candidate SNPs with annotations for genes in linkage disequilibrium.
 #LD-annot/0.1
 #Email:jprunier.1@gmail.com
 
