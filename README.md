@@ -100,6 +100,8 @@ r2 > 0.8             |__________________________________________________________
 The output file is a tab delimited text file including in this order: SNP name, chromosome name, start position for feature (gene, transcript...) in LD, end position for feature in LD, feature annotation according to the gff file.
 Chromosome name can be a contig name in case of draft assembly.
 
+## Performances
+LD-annot has been developped to be deployed on common desk or laptops computers even though it can also be deployed on linux servers. Using a 4CPU cores and 8 Gbytes of RAM, LD-annot ran for 14 minutes to analyze 14,374,089 SNPs and a list of 1536 candidate ones. If a user wishes to test a range of thresholds for r2 (usually between 0.6 and 0.99) and different features (gene, transcript, exon...) from the same dataset, the program will not rerun the entire algorithm but only the last steps and thus save time to the user. See table published with the article for more numbers regarding the program performances using a standard laptop.
 
 
 
