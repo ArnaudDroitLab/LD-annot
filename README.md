@@ -51,7 +51,7 @@ PATH=~/bin:<other paths>:$PATH
 ```
 
 ## Running LD-annot
-The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.py and calculLD.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file.
+The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.py and calculLD.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory.
 
 LD-annot runs using only one command line which provide path to files and required parameters.
 
