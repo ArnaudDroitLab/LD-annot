@@ -39,7 +39,7 @@ unzip plink_linux_x86_64_20190304.zip
 cd plink_linux_x86_64_20190304
 mv plink ~/bin/
 ```
-Then, you can either change your $PATH variable only for this session by doing:
+Then, you can either change your $PATH variable only for the onoing session by doing:
 ```
 export PATH=~/bin/:$PATH
 ```
@@ -51,6 +51,8 @@ PATH=~/bin:<other paths>:$PATH
 ```
 
 ## Running LD-annot
+The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.py and calculLD.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file.
+
 LD-annot runs using only one command line which provide path to files and required parameters.
 
 ##### When data come from a vcf file, run the following command line:
@@ -61,7 +63,7 @@ where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic c
 
 
 
-##### When data come from SNP genotyping, files containing genotypes per individual should be placed in a folder int the same folder as LD-annot.py and calculLD.sh:
+##### When data come from SNP genotyping, files containing genotypes per individual should be placed in a folder in the same folder as LD-annot.py and calculLD.sh:
 ```
 python3 annot-GBS.py PathToSnpFiles annot.gff3 candidate type thr output SNP_Map
 ```
