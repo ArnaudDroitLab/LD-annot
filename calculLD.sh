@@ -50,7 +50,7 @@ then
 	Step=$(grep "bedfiles" checkpoint)
 	if [ "${Step}" != "bedfiles" ]
         	then
-                plink2 --file mydata --out mydata --make-bed --noweb --chr-set $NR
+                plink --file mydata --out mydata --make-bed --noweb --chr-set $NR
                 printf "bedfiles\n" >> checkpoint
 		else
         	printf "\t\tbedfiles already existing\n"
@@ -73,10 +73,10 @@ if [ "${Step}" != "LDestimation" ]
 then
 	if [ ${1: -4} != ".vcf" ]
 		then
-		plink2 --file mydata --r2 --ld-window-r2 0.4 --out mydata --noweb --chr-set $NR
+		plink --file mydata --r2 --ld-window-r2 0.4 --out mydata --noweb --chr-set $NR
 		printf "LDestimation\n" >> checkpoint
 	else
-		plink2 --vcf $1 --r2 --ld-window-r2 0.4 --out mydata --noweb --allow-extra-chr --chr-set 95
+		plink --vcf $1 --r2 --ld-window-r2 0.4 --out mydata --noweb --allow-extra-chr --chr-set 95
 		printf "LDestimation\n" >> checkpoint
 	fi
 else
