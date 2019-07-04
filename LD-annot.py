@@ -17,7 +17,7 @@ def documentation():
     There are missing inputfile in the command
 
     Usage:
-	python annot-GBS.py data annotation-file candidate-marker-list type threshold output_name SNP-map-file*
+	python LD-annot.py data annotation-file candidate-marker-list type threshold output_name SNP-map-file*
 	
     data: either a vcf file or a path to genotype files from SNPchips
     annotation-file: a gff file with annotations
