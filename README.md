@@ -32,19 +32,19 @@ chmod +x LD-annot.py
 
 #### Installing PLINK1.9 (if needed)
 Note that LD-annot invokes the plink function. If you're also installing PLINK1.9, please run from the Dowloads folder where it should have been downloaded:
-If you're using a linux operating system:
 ```
 mkdir ~/bin #if you don't already have one
 unzip plink_linux_x86_64_20190304.zip
 cd plink_linux_x86_64_20190304
 mv plink ~/bin/
 ```
-Then, you can either change your $PATH variable only for the onoing session by doing:
+
+Then, you can either change your $PATH variable only for the ongoing session by doing:
 ```
 export PATH=~/bin/:$PATH
 ```
 
-Alternatively, the $PATH variable can be changed in the .bash_probile which will add the path to "\~/bin" into the $PATH. To do so, the .bash_profile file located into the home folder should be edited and "~/bin:" should be added to the PATH. The line should look something like this at the end :
+Alternatively, the $PATH variable can be changed in the .bash_profile which will add the path to "\~/bin" into the $PATH. To do so, the .bash_profile file located into the home folder should be edited and "~/bin:" should be added to the PATH. The line should look something like this at the end :
 
 ```
 PATH=~/bin:<other paths>:$PATH
