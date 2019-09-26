@@ -60,7 +60,7 @@ sudo apt-get install unzip
 sudo apt-get install python3-pip
 sudo pip3 install 'numpy==1.15.4'
 ```
-Then, download the #LINUX# plink1.9 from https://www.cog-genomics.org/plink2 and install plink1.9 running:
+Then, download the LINUX plink1.9 from https://www.cog-genomics.org/plink2 and install plink1.9 running:
 ```
 mkdir ~/bin #if you don't already have one
 unzip plink_linux_x86_64_20190304.zip
