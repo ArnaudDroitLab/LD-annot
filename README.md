@@ -20,7 +20,7 @@ To install it, simply follow the instructions repeated below.
 
 
 ## Install
-### Installing LD-annot on linux or Unix-based OS:
+### Installing LD-annot on Unix-based OS (Linux & Mac):
 #### Installing the LD-annot tool:
 From github, download and place LD-annot.tar.gz in the desired folder.
 Then extract it here running:
