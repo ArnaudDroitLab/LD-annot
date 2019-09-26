@@ -91,7 +91,7 @@ where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic c
 
 
 
-##### When data come from SNP genotyping, files containing genotypes per individual should be placed in a folder in the same folder as LD-annot.py and calculLD.sh:
+##### When data come from SNP genotyping, files containing genotypes per individual should be placed into a folder located in the same folder as LD-annot.py and calculLD.sh:
 ```
 python3 LD-annot.py PathToSnpFiles ex_annotations.gff ex_candidate_SNPs.txt type thr output SNP_Map
 ```
