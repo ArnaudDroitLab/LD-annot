@@ -1,5 +1,5 @@
 # LD-annot
-A bioinformatics tool to automatically provide candidate SNPs with annotations for genes in linkage disequilibrium.
+A bioinformatics tool to automatically provide annotations for genes included in DNA blocks in linkage disequilibrium with candidate SNPs.
 ## LD-annot
 ### Email: jprunier.1@gmail.com or arnaud.droit@crchudequebec.ulaval.ca
 
@@ -7,7 +7,7 @@ LD-annot estimates experiment-specific linkage disequilibrium to delineate regio
 
 
 ## Citing LD-annot
-Prunier J., Lemaçon A., Bastien A., Jafarikia M., Porth I., Robert C and Droit A. _submitted_. **LD-Annot**: a bioinformatics tool to automatically provide candidate SNPs with annotations for genes in linkage disequilibrium.
+Prunier J., Lemaçon A., Bastien A., Jafarikia M., Porth I., Robert C and Droit A. _submitted_. **LD-Annot**: a bioinformatics tool to automatically provide annotations for genes in linkage disequilibrium with candidate SNPs.
 
 
 ## Implementation and requirements
@@ -20,9 +20,10 @@ To install it, simply follow the instructions repeated below.
 
 
 ## Install
-### Installing LD-annot
+### Installing LD-annot on linux or Unix-based OS:
+#### Installing the LD-annot tool:
 From github, download and place LD-annot.tar.gz in the desired folder.
-Then extract it here:
+Then extract it here running:
 ```
 gunzip LD-annot.tar.gz
 tar -xvf LD-annot.tar
@@ -48,7 +49,34 @@ Alternatively, the $PATH variable can be changed in the .bash_profile which will
 
 ```
 PATH=~/bin:<other paths>:$PATH
+
 ```
+### Installing LD-annot on Windows OS (10 and following):
+The best way to make LD-annot working without nightmares on a windows OS is actually to enable the developper mode and install the Bash shell command-line tool and use it as if it were a linux OS.
+This installation can be done by following these steps: https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10.
+Afterwards, install unzip and the numpy python package by running the following commands:
+```
+sudo apt-get install unzip
+sudo apt-get install python3-pip
+sudo pip3 install 'numpy==1.15.4'
+```
+Then, download the #LINUX# plink1.9 from https://www.cog-genomics.org/plink2 and install plink1.9 running:
+```
+mkdir ~/bin #if you don't already have one
+unzip plink_linux_x86_64_20190304.zip
+mv plink ~/bin/
+export PATH=~/bin/:$PATH
+```
+
+Then, the tool itself:
+From github, download and place LD-annot.tar.gz in the desired folder. Then extract it here running:
+```
+gunzip LD-annot.tar.gz
+tar -xvf LD-annot.tar
+cd LD-annot/
+chmod +x LD-annot.py
+```
+
 
 ## Running LD-annot
 The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.py and calculLD.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory.
