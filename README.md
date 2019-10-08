@@ -85,7 +85,7 @@ LD-annot runs using only one command line which provide path to files and requir
 
 ##### When data come from a vcf file, run the following command line:
 ```
-python3 LD-annot.py ex_data.vcf ex_annotations.gff ex_candidate_SNPs.txt type thr output
+python3 LD-annot0.4.py ex_data.vcf ex_annotations.gff ex_candidate_SNPs.txt type thr output
 ```
 where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, and "output" is an output name specified by the user.
 
@@ -93,7 +93,7 @@ where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic c
 
 ##### When data come from SNP genotyping, files containing genotypes per individual should be placed into a folder located in the same folder as LD-annot.py and calculLD.sh:
 ```
-python3 LD-annot.py PathToSnpFiles ex_annotations.gff ex_candidate_SNPs.txt type thr output SNP_Map
+python3 LD-annot0.4.py PathToSnpFiles ex_annotations.gff ex_candidate_SNPs.txt type thr output SNP_Map
 ```
 where "PathToSnpFiles" is the path to the folder containing all data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, "output" is an output name specified by the user, and "SNP_Map" is a map file indicating chromosome and positions for all SNPs genotyped using the SNP-chip.
 
