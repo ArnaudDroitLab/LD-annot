@@ -36,7 +36,6 @@ Note that LD-annot invokes the plink function. If you're also installing PLINK1.
 ```
 mkdir ~/bin #if you don't already have one
 unzip plink_linux_x86_64_20190304.zip
-cd plink_linux_x86_64_20190304
 mv plink ~/bin/
 ```
 
