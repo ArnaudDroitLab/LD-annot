@@ -21,9 +21,10 @@ To install it, simply follow the instructions repeated below.
 
 ## Install
 ### Installing LD-annot on Unix-based OS (Linux & Mac):
-Preliminary steps for MacOS users:
-If it's not installed in your system, please install gawk and gnu-sed using your favorite procedure (either brew or ...)
-afterwards run:
+####Preliminary steps for MacOS users:
+If it's not installed in your system, please install gawk and gnu-sed using your favorite procedure (either brew or ...).
+
+Afterwards run:
 ```
 alias awk='gawk'
 alias sed='gsed'
