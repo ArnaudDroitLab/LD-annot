@@ -15,12 +15,20 @@ LD-annot is meant to be easy to install and use for biologists without advanced 
 1) a python script (LD-annot.py) written in Python3 (not 2.7 that will not run properly and delivered a error message)
 2) a bash script (calculLD.sh) that need to be in the same folder and will be invoked by LD-annot.py
 
-The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find it here: https://www.cog-genomics.org/plink2 , or from this repository for linux (plink_linux_x86_64_20190304.zip). PLINK1.9 is under GNU GENERAL PUBLIC LICENSE (v3, 29 June 2007).
+The tool also needs PLINK1.9 to run. If you don't have this version installed on your computer, you may find it here: https://www.cog-genomics.org/plink2 , or from this repository (plink_linux_x86_64_20190304.zip or plink_mac_20191028.zip). PLINK1.9 is under GNU GENERAL PUBLIC LICENSE (v3, 29 June 2007).
 To install it, simply follow the instructions repeated below.
 
 
 ## Install
 ### Installing LD-annot on Unix-based OS (Linux & Mac):
+Preliminary steps for MacOS users:
+If it's not installed in your system, please install gawk and gnu-sed using your favorite procedure (either brew or ...)
+afterwards run:
+```
+alias awk='gawk'
+alias sed='gsed'
+```
+
 #### Installing the LD-annot tool:
 From github, download and place LD-annot.tar.gz in the desired folder.
 Then extract it here running:
@@ -78,7 +86,7 @@ chmod +x LD-annot.py
 
 
 ## Running LD-annot
-The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.py and calculLD.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory.
+The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.4.py and calculLD.1.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory but have to be moved into the main folder (encompassing Ld-annot.4.py and calculLD.1.py).
 
 LD-annot runs using only one command line which provide path to files and required parameters.
 
@@ -94,6 +102,7 @@ where "geno.vcf" is the data file, "annot.gff3" is the file containing genomic c
 ```
 python3 LD-annot0.4.py PathToSnpFiles ex_annotations.gff ex_candidate_SNPs.txt type thr output SNP_Map
 ```
+
 where "PathToSnpFiles" is the path to the folder containing all data file, "annot.gff3" is the file containing genomic coordinates and annotations for features (most often genes), "candidate" is a list of chromosomes and positions for candidate polymosphisms, "type" is the feature (mRNA, CDS, gene), "thr" is the threshold for r2, "output" is an output name specified by the user, and "SNP_Map" is a map file indicating chromosome and positions for all SNPs genotyped using the SNP-chip.
 
 
