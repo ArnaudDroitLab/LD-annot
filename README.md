@@ -87,7 +87,7 @@ chmod +x LD-annot.py
 
 
 ## Running LD-annot
-The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.4.py and calculLD.1.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory but have to be moved into the main folder (encompassing Ld-annot.4.py and calculLD.1.py).
+The easiest way to run LD-annot is to move/copy your data within the folder containing LD-annot.4.py and calculLD.1.sh scripts. This folder must also include the list of candidate SNPs as well as the annotation gff/gtf/gff3 file. File examples are provided in the "data" subdirectory but have to be moved into the main folder (encompassing LD-annot.4.py and calculLD.1.py).
 
 LD-annot runs using only one command line which provide path to files and required parameters.
 
