@@ -62,7 +62,7 @@ PATH=~/bin:<other_paths>:$PATH
 ### Installing LD-annot on Windows OS (10 and following):
 The best way to make LD-annot working without nightmares on a windows OS is actually to enable the developper mode and install the Bash shell command-line tool and use it as if it were a linux OS.
 This installation can be done by following these steps: https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10.
-Afterwards, install unzip and the numpy python package by running the following commands:
+Afterwards, unzip and install the _numpy_ python package by running the following commands:
 ```
 sudo apt-get install unzip
 sudo apt-get install python3-pip
