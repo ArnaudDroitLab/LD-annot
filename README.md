@@ -8,7 +8,7 @@ LD-annot estimates experiment-specific linkage disequilibrium to delineate regio
 
 ## Citing LD-annot
 Prunier J., Lemaçon A., Bastien A., Jafarikia M., Porth I., Robert C and Droit A. (2019) **LD-Annot**: a bioinformatics tool to automatically provide annotations for genes in linkage disequilibrium with candidate SNPs. _Frontiers in Genetics, 10: 1192_
-
+https://www.frontiersin.org/articles/10.3389/fgene.2019.01192/full
 
 ## Implementation and requirements
 LD-annot is meant to be easy to install and use for biologists without advanced bioinformatics skills. It simply requires to be downloaded and placed into a folder. LD-annot is actually divided into to scripts:
